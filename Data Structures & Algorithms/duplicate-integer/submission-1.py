@@ -1,0 +1,8 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        mydict = {}
+        for i in nums:
+            if i in mydict:
+                return True
+            mydict[i] = i
+        return False
